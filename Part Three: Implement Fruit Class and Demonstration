@@ -1,0 +1,17 @@
+public class Fruit
+{
+    public string Name { get; set; }
+    public string Color { get; set; }
+
+    public override string ToString()
+    {
+        return $"{Name} (Color: {Color})";
+    }
+}
+
+// Usage demonstration
+var fruitManager = new ItemManager<Fruit>();
+fruitManager.AddItem(new Fruit { Name = "Apple", Color = "Red" });
+fruitManager.AddItem(new Fruit { Name = "Banana", Color = "Yellow" });
+fruitManager.AddItem(new Fruit { Name = "Grape", Color = "Purple" });
+fruitManager.PrintItems();
