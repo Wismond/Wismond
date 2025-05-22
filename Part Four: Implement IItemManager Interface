@@ -1,0 +1,11 @@
+public interface IItemManager<T>
+{
+    void AddItem(T item);
+    bool RemoveItem(T item);
+    void PrintItems();
+}
+
+public class ItemManager<T> : IItemManager<T>
+{
+    // Implementation remains the same
+}
